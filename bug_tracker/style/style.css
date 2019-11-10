@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    color: #059;
+    display: inline;
+}
+
+h2 {
+    display: inline;
+    color: #789;
+}
+
+h3, h4 {
+    margin: 10px 0;
+}
+
+li, section {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+select, input, button {
+    border-radius: 4px;
+    border: 1px solid #789;
+    padding: 4px;
+    margin: 5px 5px 5px 0;
+}
+
+input[name="project"], input[name="description"], input[name="person"] {
+    width: 100%;
+}
+
+button[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+button[value="Ansicht aktualisieren"] {
+    background-color: #138496;
+}
+
+button[value="Löschen"] {
+    background-color: red;
+    margin: 5px 5px 5px 0;
+}
+
+button[value="Schließen"] {
+    background-color: orange;
+    margin: 5px 5px 5px 0;
+}
+
+button[value="Ergänzen"] {
+    background-color: #090;
+    margin: 5px 0;
+    flex-basis: 200px;
+}
+
+button[value="URL Ergänzen"] {
+    background-color: #009;
+    margin: 5px 0;
+    flex-basis: 200px;
+}
+
+button[value="Bild-URL Ergänzen"] {
+    background-color: #F947E7;
+    margin: 5px 0;
+    flex-basis: 200px;
+}
+
+input[name="addtext"], input[name="addurl"], input[name="addimg"] {
+    flex: 3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Classes: ------------------ */
+.btn {
+    width: 200px;
+    background-color: #00BFFF;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.symbol {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+}
+
+.data-imgurlupdate {
+    color: #F947E7;
+}
+
+.data-project, .data-descr, .data-person, .data-id {
+    color: #345;
+}
+
+.data-prio-1 {
+    color: blue;
+}
+
+.data-prio-2, .orange {
+    color: orange;
+}
+
+.data-prio-3 {
+    color: red;
+}
+
+.data-closed {
+    display: inline-block;
+}
+
+.data-textupdate {
+    color: #090;
+}
+
+.data-urlupdate {
+    color: #009;
+}
+
+.btn-ctrl-area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.data-img {
+    height: 100px;
+    max-width: 150px;
+    border: 1px solid #F947E7;
+}
+
+.btns-scroll {
+    position: fixed;
+    border-width: 0;
+    background: none;
+    font-size: 30px;
+    color: rgba(200,200,200,0.4);
+    outline: none;
+  }
+  
+.btns-scroll:hover {
+    color: rgba(200,200,200,0.7)
+  }
+
+/* IDs: ------------------ */
+#all {
+    font-family:Arial;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#main-input-area {
+    background-color: #ddd;
+}
+
+#btn-up {
+    right: 5px;
+    top: 45%;
+    display: none;
+  }
+  
+#btn-down {
+    right: 5px;
+    top: 55%;
+    display: none;
+  }
+
+#area-db {
+    display: none;
+}
+
+#area-input-show-hide {
+    display: none;
+}
+
+#btn-InputShowHide, #btn-DbShowHide {
+    flex-basis: 200px;
+    margin-right: 0;
+}
+
+#newentryheader {
+    display: inline;
+    flex: 2;
+    font-weight: bold;
+    padding: 4px 4px 4px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#dbheader {
+    display: inline;
+    flex: 1;
+    font-weight: bold;
+    padding: 4px 4px 4px 0;
+    margin: 5px 5px 5px 0;
+}
+
+#form-refresh {
+    display: inline;
+    flex: 1;
+}
